@@ -24,3 +24,16 @@ done
 1. `<skill-name>/SKILL.md` をこのリポジトリ直下に作る
 2. 上と同じ要領で `~/.claude/skills/<skill-name>` と `~/.codex/skills/<skill-name>` にシンボリックリンクを張る
 3. commit & push
+
+## 外部ツール（このリポジトリには含めない）
+
+自作じゃないフル機能のフレームワークは、このリポジトリに取り込まず各CLIのplugin機構でそのままインストールする。
+理由: [obra/superpowers](https://github.com/obra/superpowers) はSKILL.mdだけでなく自動発火用のhookも含めて動くため、
+skillフォルダだけコピーするとその挙動が失われる。フル機能を活かすため公式plugin配布のまま使う。
+
+- **[Superpowers](https://github.com/obra/superpowers)** — 開発方法論（brainstorm→plan→TDD→subagent実行）。手戻りコストが高い/規模の大きいプロジェクトで使う。
+  ```
+  /plugin marketplace add obra/superpowers-marketplace
+  /plugin install superpowers@superpowers-marketplace
+  ```
+  判断基準は [[dev_methodology_by_project_weight]] 参照（AiRuu Inc.リポジトリのメモリ）。「〜作りたい」と言ったらデフォルトでこちらを使う。本当に軽いタスクだけこのリポジトリのオリジナルskillで完結させる。
