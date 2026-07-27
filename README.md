@@ -1,13 +1,13 @@
-# claude-skills
+# skills
 
 個人用のClaude Code / Codex 両対応skillリポジトリ。
 
 ## 使い方（新しいPCでのセットアップ）
 
 ```bash
-git clone <this-repo> ~/Documents/GitHub/claude-skills
+git clone <this-repo> ~/Documents/GitHub/skills
 
-for skill in ~/Documents/GitHub/claude-skills/*/; do
+for skill in ~/Documents/GitHub/skills/*/; do
   name=$(basename "$skill")
   [ "$name" = ".git" ] && continue
   ln -s "$skill" ~/.claude/skills/"$name"
