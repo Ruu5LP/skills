@@ -25,6 +25,17 @@ done
 2. 上と同じ要領で `~/.claude/skills/<skill-name>` と `~/.codex/skills/<skill-name>` にシンボリックリンクを張る
 3. commit & push
 
+## Skill一覧
+
+| skill | 内容 |
+|---|---|
+| `git-branch-pr` | ブランチ作成→コミット→push→PR作成を自動化（オリジナル） |
+| `github-triage` | GitHub Issue/PRをラベルのステートマシンで triage |
+| `github-to-tickets` | 会話やプランをブロッキング関係付きのGitHub Issueに分解 |
+
+`github-triage` と `github-to-tickets` は [mattpocock/skills](https://github.com/mattpocock/skills)（MIT License）の該当skillから、
+自己完結して動くように書き直したもの。ライセンス表記は [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 参照。
+
 ## 外部ツール（このリポジトリには含めない）
 
 自作じゃないフル機能のフレームワークは、このリポジトリに取り込まず各CLIのplugin機構でそのままインストールする。
