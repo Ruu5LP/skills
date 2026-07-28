@@ -32,9 +32,14 @@ done
 | `git-branch-pr` | ブランチ作成→コミット→push→PR作成を自動化（オリジナル） |
 | `github-triage` | GitHub Issue/PRをラベルのステートマシンで triage |
 | `github-to-tickets` | 会話やプランをブロッキング関係付きのGitHub Issueに分解 |
+| `mino-code-design` | 命名・責務肥大化・条件分岐・抽象化の罠を防ぐコード設計チェック（オリジナル、ミノ駆動氏の資料ベース） |
+| `codebase-design` | 「深いモジュール」設計の語彙・原則（interface/seam/depth/leverage/locality） |
+| `improve-codebase-architecture` | コードベースをスキャンして「浅いモジュール」をビジュアルHTMLレポートで指摘 |
 
-`github-triage` と `github-to-tickets` は [mattpocock/skills](https://github.com/mattpocock/skills)（MIT License）の該当skillから、
-自己完結して動くように書き直したもの。ライセンス表記は [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 参照。
+`github-triage` / `github-to-tickets` / `codebase-design` / `improve-codebase-architecture` は [mattpocock/skills](https://github.com/mattpocock/skills)（MIT License）の該当skillから取り込んだもの（一部は自己完結するよう書き直し）。
+`mino-code-design` はミノ駆動氏の公開資料に基づくこのリポジトリ独自のskill。ライセンス表記・出典は [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 参照。
+
+`mino-code-design`（命名・関数/クラスレベル）と `codebase-design` + `improve-codebase-architecture`（モジュール/インターフェースレベル）はミクロ⇔マクロで補完関係にある。
 
 ## 外部ツール（このリポジトリには含めない）
 

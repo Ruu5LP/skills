@@ -1,6 +1,6 @@
 # Third-Party Notices
 
-## github-triage, github-to-tickets
+## github-triage, github-to-tickets, codebase-design, improve-codebase-architecture
 
 Adapted from [mattpocock/skills](https://github.com/mattpocock/skills), licensed under the MIT License:
 
@@ -28,4 +28,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-These two skills were rewritten to drop dependencies on Matt Pocock's other skills (`/grilling`, `/domain-modeling`) and his `/setup-matt-pocock-skills` configuration step, so they work standalone against plain `gh`. The core state-machine/vertical-slice ideas are his.
+`github-triage` and `github-to-tickets` were rewritten to drop dependencies on Matt Pocock's other skills (`/grilling`, `/domain-modeling`) and his `/setup-matt-pocock-skills` configuration step, so they work standalone against plain `gh`. The core state-machine/vertical-slice ideas are his.
+
+`codebase-design` is copied close to verbatim (it was already self-contained). `improve-codebase-architecture` had its grilling-loop step (step 3) rewritten to a plain conversation instead of invoking his separate `/grilling` and `/domain-modeling` skills, and its `CONTEXT.md`/ADR references made optional rather than assumed. The deep-module vocabulary, the HTML report design, and the architecture-scanning process are his.
+
+## mino-code-design
+
+Not copied from a third party — this repo's own skill, applying design principles publicly published by ミノ駆動 (Mino Driven), author of『良いコード/悪いコードで学ぶ設計入門』. Sources cited directly in [mino-code-design/SKILL.md](mino-code-design/SKILL.md).
