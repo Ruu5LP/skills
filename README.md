@@ -48,3 +48,9 @@ skillフォルダだけコピーするとその挙動が失われる。フル機
   /plugin install superpowers@superpowers-marketplace
   ```
   判断基準は [[dev_methodology_by_project_weight]] 参照（AiRuu Inc.リポジトリのメモリ）。「〜作りたい」と言ったらデフォルトでこちらを使う。本当に軽いタスクだけこのリポジトリのオリジナルskillで完結させる。
+
+- **[vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)** — Vercel公式。React/Next.jsのパフォーマンスルール集（`react-best-practices`）、UI/UXレビュー（`web-design-guidelines`）など。
+  **LICENSEファイルがなく著作権はVercelに留保されている**ため、`github-triage`/`github-to-tickets`のように中身をコピー・書き換えて取り込むことはしない。Reactプロジェクトごとに公式インストーラーで直接入れる。
+  ```
+  npx skills add vercel-labs/agent-skills
+  ```
