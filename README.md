@@ -42,6 +42,7 @@ done
 | `planning-and-task-breakdown` | 仕様を依存関係付きの実装可能なタスクへ分解する |
 | `shipping-and-launch` | テスト、監視、段階展開、ロールバックを含むリリース計画を作る |
 | `prioritization-advisor` | 状況に合う優先順位付けフレームワークを選ぶ |
+| `reviewing-meetings` | 文字起こしから会議進行と本人の発言を振り返る |
 | `incident-postmortem` | 障害の影響・時系列・根本原因・再発防止策を整理する |
 | `impediment-prioritization` | ブロッカー、リスク、改善項目を価値・コスト・リスクで順位付けする |
 

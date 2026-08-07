@@ -1,0 +1,7 @@
+interface:
+  display_name: "会議フィードバック"
+  short_description: "文字起こしから会議進行と本人の発言を具体的に振り返る"
+  default_prompt: "$reviewing-meetings を使って、この会議の文字起こしから進行と私の発言を根拠付きで振り返って。"
+
+policy:
+  allow_implicit_invocation: false
